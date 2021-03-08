@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <default-header />
-    <Nuxt />
-  </div>
+  <v-app>
+    <v-app-bar app color="green">
+      <default-header />
+    </v-app-bar>
+    <v-content>
+      <Nuxt />
+    </v-content>
+  </v-app>
 </template>
 
 <script>

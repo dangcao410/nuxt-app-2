@@ -1,16 +1,10 @@
 <template>
-  <v-app>
-    <v-app-bar app color="green">
-      <v-btn text to="/">Home</v-btn>
-      <v-btn text to="/decks">Decks</v-btn>
-      <v-btn text to="/profile">Profile</v-btn>
-      <v-btn text to="/settings">Settings</v-btn>
-    </v-app-bar>
-
-    <v-content>
-      <Nuxt />
-    </v-content>
-  </v-app>
+  <div>
+    <v-btn text to="/">Home</v-btn>
+    <v-btn text to="/decks">Decks</v-btn>
+    <v-btn text to="/profile">Profile</v-btn>
+    <v-btn text to="/settings">Settings</v-btn>
+  </div>
 <!--  <header>-->
 <!--    <nav>-->
 <!--      <ul>-->
