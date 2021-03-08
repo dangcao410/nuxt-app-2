@@ -1,10 +1,15 @@
 <template>
   <div>
     <h1>Decks, enter number of deck to show</h1>
-    <input v-model="deckId" type="text" placeholder="Enter Deck ID">
-    <button @click="showDeck">
-      Go to Deck
-    </button>
+
+    <v-row>
+      <v-col cols="12" sm="6">
+        <v-text-field v-model="deckId" label="Enter Deck ID" width="30%"></v-text-field>
+      </v-col>
+      <v-col>
+        <v-btn @click="showDeck">Go to Deck</v-btn>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

@@ -6,6 +6,10 @@
       <v-btn text to="/profile">Profile</v-btn>
       <v-btn text to="/settings">Settings</v-btn>
     </v-app-bar>
+
+    <v-content>
+      <Nuxt />
+    </v-content>
   </v-app>
 <!--  <header>-->
 <!--    <nav>-->
