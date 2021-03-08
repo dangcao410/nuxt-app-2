@@ -1,8 +1,9 @@
 <template>
   <section>
-    <div class="r">
-      <div class="ct text_center">
+    <v-row>
+      <v-container>
         <h3>Deck #{{ $route.params.id }}: abc.</h3>
+
         <div class="tools">
           <button class="btn btn_success">
             Start now
@@ -11,47 +12,49 @@
             Create a card
           </button>
         </div>
+
         <hr class="divide">
-        <div class="r">
-          <div class="c_3">
-            <div class="card">
+
+        <v-row>
+          <v-col md="3" cols="12">
+            <v-card>
               <div class="font-card">
-                <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" alt="Thumbnail card">
+                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
               </div>
               <div class="back-card">
               </div>
-            </div>
-          </div>
-          <div class="c_3">
-            <div class="card">
+            </v-card>
+          </v-col>
+          <v-col md="3" cols="12">
+            <v-card>
               <div class="font-card">
-                <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" alt="Thumbnail card">
+                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
               </div>
               <div class="back-card">
               </div>
-            </div>
-          </div>
-          <div class="c_3">
-            <div class="card">
+            </v-card>
+          </v-col>
+          <v-col md="3" cols="12">
+            <v-card>
               <div class="font-card">
-                <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" alt="Thumbnail card">
+                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
               </div>
               <div class="back-card">
               </div>
-            </div>
-          </div>
-          <div class="c_3">
-            <div class="card">
+            </v-card>
+          </v-col>
+          <v-col md="3" cols="12">
+            <v-card>
               <div class="font-card">
-                <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" alt="Thumbnail card">
+                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
               </div>
               <div class="back-card">
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-row>
   </section>
 </template>
 
@@ -72,11 +75,12 @@ export default {
     margin: 2rem 0;
   }
 
-  .card {
-    padding: 1rem;
+  .font-card {
+    text-align: center;
   }
 
-  .card img {
-    width: 60%;
+  .font-card img {
+    height: 150px;
+    width: auto;
   }
 </style>

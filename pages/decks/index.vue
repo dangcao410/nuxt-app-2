@@ -8,7 +8,7 @@
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px"/>
+                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px" />
               </v-col>
               <v-col md="9" cols="12">
                 <v-card-title>
@@ -27,7 +27,7 @@
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px"/>
+                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px" />
               </v-col>
               <v-col md="9" cols="12">
                 <v-card-title>
@@ -46,7 +46,7 @@
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px"/>
+                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px" />
               </v-col>
               <v-col md="9" cols="12">
                 <v-card-title>
