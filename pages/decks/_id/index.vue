@@ -71,11 +71,11 @@ export default {
 
   .font-card {
     text-align: center;
+    padding: 5px;
   }
 
   .font-card img {
-    height: 150px;
-    width: auto;
+    width: 70%;
   }
 
   h3, .tools {

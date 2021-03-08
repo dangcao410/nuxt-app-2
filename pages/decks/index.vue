@@ -8,7 +8,7 @@
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px" />
+                <img src="~/assets/images/lights.jpg" alt="Thumbnail card" height="150px" width="100%" />
               </v-col>
               <v-col md="9" cols="12">
                 <v-card-title>
@@ -23,11 +23,11 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/decks/1">
+        <nuxt-link to="/decks/2">
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px" />
+                <img src="~/assets/images/lights.jpg" alt="Thumbnail card" height="150px" width="100%" />
               </v-col>
               <v-col md="9" cols="12">
                 <v-card-title>
@@ -42,11 +42,11 @@
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/decks/1">
+        <nuxt-link to="/decks/3">
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px" />
+                <img src="~/assets/images/lights.jpg" alt="Thumbnail card" height="150px" width="100%" />
               </v-col>
               <v-col md="9" cols="12">
                 <v-card-title>
