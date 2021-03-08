@@ -1,31 +1,31 @@
 <template>
-  <div class="ct">
+  <v-container>
     <div class="banner">
       <div class="thumbnail-banner">
 
       </div>
     </div>
     <div class="popular-decks">
-      <h3 class="text_center my_3">3 Popular Decks</h3>
-      <div class="r">
-        <div class="c_4">
-          <div class="card">
+      <h3>3 Popular Decks</h3>
+      <v-row>
+        <v-col md="4" cols="12">
+          <v-card>
             Deck 1
-          </div>
-        </div>
-        <div class="c_4">
-          <div class="card">
+          </v-card>
+        </v-col>
+        <v-col md="4" cols="12">
+          <v-card>
             Deck 2
-          </div>
-        </div>
-        <div class="c_4">
-          <div class="card">
+          </v-card>
+        </v-col>
+        <v-col md="4" cols="12">
+          <v-card>
             Deck 3
-          </div>
-        </div>
-      </div>
+          </v-card>
+        </v-col>
+      </v-row>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -42,5 +42,9 @@ export default {}
     height: inherit;
     background: url("~/assets/images/banner.jpg") center center;
     background-size: cover;
+  }
+
+  .popular-decks h3 {
+    text-align: center;
   }
 </style>

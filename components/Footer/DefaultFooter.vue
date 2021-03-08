@@ -1,7 +1,13 @@
 <template>
-  <footer class="text_center">
-    <hr class="my_5">
+  <footer>
+    <hr>
     <p>Design by DC</p>
     <p>2021</p>
   </footer>
 </template>
+
+<style scoped>
+  footer {
+    text-align: center;
+  }
+</style>

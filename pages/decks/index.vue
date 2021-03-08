@@ -1,45 +1,67 @@
 <template>
-  <div>
-    <div class="ct">
-      <h3>List of your decks</h3>
+  <v-container>
+    <h3>List of your decks</h3>
 
-      <ul class="decks-list">
-        <li>
-          <nuxt-link class="deck" to="/decks/1">
-            <div class="card deck-card">
-              <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card">
-              <div class="card_body">
-                <h3>Title card</h3>
-                <p>Description card</p>
-              </div>
-            </div>
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link class="deck" to="/decks/2">
-            <div class="card deck-card">
-              <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card">
-              <div class="card_body">
-                <h3>Title card</h3>
-                <p>Description card</p>
-              </div>
-            </div>
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link class="deck" to="/decks/3">
-            <div class="card deck-card">
-              <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card">
-              <div class="card_body">
-                <h3>Title card</h3>
-                <p>Description card</p>
-              </div>
-            </div>
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <ul class="decks-list">
+      <li>
+        <nuxt-link to="/decks/1">
+          <v-card class="deck-card">
+            <v-row>
+              <v-col md="3" cols="12">
+                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px"/>
+              </v-col>
+              <v-col md="9" cols="12">
+                <v-card-title>
+                  Title card
+                </v-card-title>
+                <v-card-text>
+                  Description card
+                </v-card-text>
+              </v-col>
+            </v-row>
+          </v-card>
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/decks/1">
+          <v-card class="deck-card">
+            <v-row>
+              <v-col md="3" cols="12">
+                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px"/>
+              </v-col>
+              <v-col md="9" cols="12">
+                <v-card-title>
+                  Title card
+                </v-card-title>
+                <v-card-text>
+                  Description card
+                </v-card-text>
+              </v-col>
+            </v-row>
+          </v-card>
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/decks/1">
+          <v-card class="deck-card">
+            <v-row>
+              <v-col md="3" cols="12">
+                <v-img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Thumbnail card" height="150px"/>
+              </v-col>
+              <v-col md="9" cols="12">
+                <v-card-title>
+                  Title card
+                </v-card-title>
+                <v-card-text>
+                  Description card
+                </v-card-text>
+              </v-col>
+            </v-row>
+          </v-card>
+        </nuxt-link>
+      </li>
+    </ul>
+  </v-container>
 </template>
 
 <script>
@@ -66,12 +88,7 @@ export default {
     height: 150px;
   }
 
-  .deck-card img {
-    height: 148px;
-    width: auto;
-  }
-
-  .deck {
-    display: block;
+  h3 {
+    text-align: center;
   }
 </style>
