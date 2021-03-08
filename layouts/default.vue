@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar app color="green">
+    <v-app-bar app color="blue">
       <default-header />
     </v-app-bar>
-    <v-content>
+    <v-main>
       <Nuxt />
-    </v-content>
+    </v-main>
     <default-footer />
   </v-app>
 </template>

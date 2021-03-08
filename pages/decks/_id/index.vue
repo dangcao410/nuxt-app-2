@@ -4,12 +4,8 @@
       <h3>Deck #{{ $route.params.id }}: abc.</h3>
 
       <div class="tools">
-        <v-btn color="success">
-          Start now
-        </v-btn>
-        <v-btn color="primary">
-          Create a card
-        </v-btn>
+        <v-btn color="success">Start now</v-btn>
+        <v-btn color="primary">Create a card</v-btn>
       </div>
 
       <hr class="divide">
