@@ -1,60 +1,54 @@
 <template>
   <section>
-    <v-row>
-      <v-container>
-        <h3>Deck #{{ $route.params.id }}: abc.</h3>
+    <v-container>
+      <h3>Deck #{{ $route.params.id }}: abc.</h3>
 
-        <div class="tools">
-          <button class="btn btn_success">
-            Start now
-          </button>
-          <button class="btn btn_primary">
-            Create a card
-          </button>
-        </div>
+      <div class="tools">
+        <v-btn color="success">
+          Start now
+        </v-btn>
+        <v-btn color="primary">
+          Create a card
+        </v-btn>
+      </div>
 
-        <hr class="divide">
+      <hr class="divide">
 
-        <v-row>
-          <v-col md="3" cols="12">
-            <v-card>
-              <div class="font-card">
-                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
-              </div>
-              <div class="back-card">
-              </div>
-            </v-card>
-          </v-col>
-          <v-col md="3" cols="12">
-            <v-card>
-              <div class="font-card">
-                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
-              </div>
-              <div class="back-card">
-              </div>
-            </v-card>
-          </v-col>
-          <v-col md="3" cols="12">
-            <v-card>
-              <div class="font-card">
-                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
-              </div>
-              <div class="back-card">
-              </div>
-            </v-card>
-          </v-col>
-          <v-col md="3" cols="12">
-            <v-card>
-              <div class="font-card">
-                <img src="~/assets/images/deck.jpeg" alt="Thumbnail card" />
-              </div>
-              <div class="back-card">
-              </div>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-row>
+      <v-row>
+        <v-col md="3" cols="12">
+          <v-card>
+            <div class="font-card">
+              <img src="~/assets/images/deck.jpeg" alt="Thumbnail card">
+            </div>
+            <div class="back-card" />
+          </v-card>
+        </v-col>
+        <v-col md="3" cols="12">
+          <v-card>
+            <div class="font-card">
+              <img src="~/assets/images/deck.jpeg" alt="Thumbnail card">
+            </div>
+            <div class="back-card" />
+          </v-card>
+        </v-col>
+        <v-col md="3" cols="12">
+          <v-card>
+            <div class="font-card">
+              <img src="~/assets/images/deck.jpeg" alt="Thumbnail card">
+            </div>
+            <div class="back-card" />
+          </v-card>
+        </v-col>
+        <v-col md="3" cols="12">
+          <v-card>
+            <div class="font-card">
+              <img src="~/assets/images/deck.jpeg" alt="Thumbnail card">
+            </div>
+            <div class="back-card" />
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </section>
 </template>
 
@@ -82,5 +76,9 @@ export default {
   .font-card img {
     height: 150px;
     width: auto;
+  }
+
+  h3, .tools {
+    text-align: center;
   }
 </style>
