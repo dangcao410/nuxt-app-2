@@ -1,10 +1,14 @@
 <template>
   <v-container>
-    <div class="d_flex justify_content_between" style="margin: 10px;">
-      <h3>List of your decks</h3>
-      <v-btn color="success" @click.prevent="openModal">
-        Create a Deck
-      </v-btn>
+    <div class="" style="margin: 10px;">
+      <h3 class="text-center">
+        List of your decks
+      </h3>
+      <v-col class="text-right">
+        <v-btn color="success" @click.prevent="openModal">
+          Create a Deck
+        </v-btn>
+      </v-col>
     </div>
     <ul class="decks-list">
       <li>
@@ -54,12 +58,36 @@
       </li>
     </ul>
 
-    <v-modal name="test">
-      <div class="test_body">
-        <h1>Test modal</h1>
-        <v-btn color="secondary" @click.prevent="closeModal">
-          Close Modal
-        </v-btn>
+    <!-- Modal-->
+    <v-modal name="CreateDeckModal">
+      <div class="modal_body">
+        <h2>Create a new Deck</h2>
+        <v-form>
+          <v-text-field
+            label="Name"
+            required
+          />
+          <v-textarea
+            label="Description"
+            required
+          />
+          <v-file-input
+            label="Thumbnail"
+            required
+          />
+          <v-row>
+            <v-col class="text-left" md="6" cols="12">
+              <v-btn color="success" @click.prevent="createDeck">
+                Create
+              </v-btn>
+            </v-col>
+            <v-col class="text-right" md="6" cols="12">
+              <v-btn color="secondary" class="text-right" @click.prevent="closeModal">
+                Close
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-form>
       </div>
     </v-modal>
   </v-container>
@@ -73,10 +101,12 @@ export default {
   },
   methods: {
     openModal () {
-      this.$modal.open({ name: 'test' })
+      this.$modal.open({ name: 'CreateDeckModal' })
     },
     closeModal () {
-      this.$modal.close({ name: 'test' })
+      this.$modal.close({ name: 'CreateDeckModal' })
+    },
+    createDeck () {
     }
   }
 }
@@ -97,14 +127,9 @@ export default {
     height: 150px;
   }
 
-  h3 {
-    text-align: center;
-  }
-</style>
-
-<style scoped>
-  .test_body {
+  .modal_body {
     background: #ffffff;
     padding: 1rem;
+    width: 500px;
   }
 </style>
