@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h3>Deck #{{ $route.params.id }}: abc.</h3>
+    <h3>Deck #{{ $route.params.id }}: {{ deck.name }}.</h3>
 
     <div class="tools">
       <v-btn color="success">
@@ -64,6 +64,19 @@ export default {
   // validate ({ params }) {
   //   return /^[0-9]{9,12}$/.test(params.id)
   // }
+  asyncData (context, callback) {
+    // eslint-disable-next-line nuxt/no-timing-in-fetch-data
+    setTimeout(() => {
+      callback(null, {
+        deck: {
+          _id: 1,
+          name: `Learn Englishss ${context.params.id}`,
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        }
+      })
+    }, 9000)
+  },
   data () {
     return {
       cards: [

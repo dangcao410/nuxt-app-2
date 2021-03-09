@@ -69,37 +69,45 @@ export default {
         },
         {
           _id: 2,
-          name: 'Learn English',
+          name: 'Learn English 2',
           description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
           thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
         },
         {
           _id: 3,
-          name: 'Learn English',
+          name: 'Learn English 3',
           description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
           thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
         },
         {
           _id: 4,
-          name: 'Learn English',
+          name: 'Learn English 4',
           description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
           thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
         },
         {
           _id: 5,
-          name: 'Learn English',
+          name: 'Learn English 5',
           description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
           thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
         },
         {
           _id: 6,
-          name: 'Learn English',
+          name: 'Learn English 6',
           description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
           thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
         }
       ]
     }
   },
+  // asyncData (context, callback) {
+  //   // eslint-disable-next-line nuxt/no-timing-in-fetch-data
+  //   setTimeout(() => {
+  //     callback(null, {
+  //       decks: []
+  //     })
+  //   }, 9000)
+  // },
   methods: {
     openModal () {
       this.$modal.open({ name: 'CreateDeckModal' })
