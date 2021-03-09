@@ -15,14 +15,7 @@
 
     <v-row>
       <v-col v-for="card in cards" :key="card._id" md="3" cols="12">
-        <v-card>
-          <div class="font-card">
-            <img :src="card.picture" alt="Thumbnail card" height="150px">
-          </div>
-          <div class="back-card text-center">
-            {{ card.keyword }}
-          </div>
-        </v-card>
+        <CardList :card="card" />
       </v-col>
     </v-row>
 
@@ -62,7 +55,12 @@
 </template>
 
 <script>
+import CardList from '~/components/Cards/CardList'
+
 export default {
+  components: {
+    CardList
+  },
   // validate ({ params }) {
   //   return /^[0-9]{9,12}$/.test(params.id)
   // }
@@ -116,15 +114,6 @@ export default {
 
   .divide {
     margin: 2rem 0;
-  }
-
-  .font-card {
-    text-align: center;
-    padding: 5px;
-  }
-
-  .font-card img {
-    width: 70%;
   }
 
   h3, .tools {

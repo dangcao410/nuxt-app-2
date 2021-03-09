@@ -12,19 +12,7 @@
     </div>
     <ul class="decks-list">
       <li v-for="deck in decks" :key="deck._id">
-        <nuxt-link :to="`/decks/${deck._id}`">
-          <v-card class="deck-card">
-            <v-row>
-              <v-col md="3" cols="12">
-                <img :src="deck.thumbnail" :alt="`Thumbnail of ${deck.name}`" height="150px" width="100%">
-              </v-col>
-              <v-col md="9" cols="12">
-                <v-card-title>{{ deck.name }}</v-card-title>
-                <v-card-text>{{ deck.description }}</v-card-text>
-              </v-col>
-            </v-row>
-          </v-card>
-        </nuxt-link>
+        <DeckList :deck="deck" />
       </li>
     </ul>
 
@@ -64,7 +52,12 @@
 </template>
 
 <script>
+import DeckList from '~/components/Decks/DeckList'
+
 export default {
+  components: {
+    DeckList
+  },
   data () {
     return {
       decks: [
@@ -127,12 +120,6 @@ export default {
 
   .decks-list li:last-child {
     margin-bottom: 0;
-  }
-
-  .deck-card {
-    display: flex;
-    flex-direction: row;
-    height: 150px;
   }
 
   .modal_body {
