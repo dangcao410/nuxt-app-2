@@ -11,46 +11,16 @@
       </v-col>
     </div>
     <ul class="decks-list">
-      <li>
-        <nuxt-link to="/decks/1">
+      <li v-for="deck in decks" :key="deck._id">
+        <nuxt-link :to="`/decks/${deck._id}`">
           <v-card class="deck-card">
             <v-row>
               <v-col md="3" cols="12">
-                <img src="~/assets/images/lights.jpg" alt="Thumbnail card" height="150px" width="100%">
+                <img :src="deck.thumbnail" :alt="`Thumbnail of ${deck.name}`" height="150px" width="100%">
               </v-col>
               <v-col md="9" cols="12">
-                <v-card-title>Title card</v-card-title>
-                <v-card-text>Description card</v-card-text>
-              </v-col>
-            </v-row>
-          </v-card>
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/decks/2">
-          <v-card class="deck-card">
-            <v-row>
-              <v-col md="3" cols="12">
-                <img src="~/assets/images/lights.jpg" alt="Thumbnail card" height="150px" width="100%">
-              </v-col>
-              <v-col md="9" cols="12">
-                <v-card-title>Title card</v-card-title>
-                <v-card-text>Description card</v-card-text>
-              </v-col>
-            </v-row>
-          </v-card>
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/decks/3">
-          <v-card class="deck-card">
-            <v-row>
-              <v-col md="3" cols="12">
-                <img src="~/assets/images/lights.jpg" alt="Thumbnail card" height="150px" width="100%">
-              </v-col>
-              <v-col md="9" cols="12">
-                <v-card-title>Title card</v-card-title>
-                <v-card-text>Description card</v-card-text>
+                <v-card-title>{{ deck.name }}</v-card-title>
+                <v-card-text>{{ deck.description }}</v-card-text>
               </v-col>
             </v-row>
           </v-card>
@@ -97,6 +67,44 @@
 export default {
   data () {
     return {
+      decks: [
+        {
+          _id: 1,
+          name: 'Learn English',
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        },
+        {
+          _id: 2,
+          name: 'Learn English',
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        },
+        {
+          _id: 3,
+          name: 'Learn English',
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        },
+        {
+          _id: 4,
+          name: 'Learn English',
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        },
+        {
+          _id: 5,
+          name: 'Learn English',
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        },
+        {
+          _id: 6,
+          name: 'Learn English',
+          description: 'Fast Track Your English Fluency. Learn to Speak English Confidently with an Expert Tutor. The Proven Way to English Fluency with Certified Tutors Rated 5* by Learners.',
+          thumbnail: 'https://wallstreetenglish.edu.vn/wp-content/uploads/2020/10/logo-new.jpg'
+        }
+      ]
     }
   },
   methods: {
